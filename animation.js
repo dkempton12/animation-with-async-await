@@ -5,7 +5,8 @@ function timer(time) {
 		setTimeout(resolve, time);
 	});
 }
-function handleClick() {
+async function handleClick() {
+	await timer(3000);
 	console.log('Working');
 }
 
