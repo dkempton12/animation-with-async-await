@@ -6,8 +6,19 @@ function timer(time) {
 	});
 }
 async function handleClick() {
-	await timer(3000);
-	console.log('Working');
+	const el = event.target;
+
+	await timer(2000);
+	el.classList.add('green-background');
+
+	await timer(1000);
+	el.classList.add('turn-into-circle');
+
+	await timer(1000);
+	el.classList.add('add-border');
+
+	await timer(1000);
+	el.classList.add('hide');
 }
 
 square.addEventListener('click', handleClick);
