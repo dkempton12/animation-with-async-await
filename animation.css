@@ -1,0 +1,37 @@
+body {
+	min-height: 100vh;
+	display: grid;
+	justify-content: center;
+	align-items: center;
+}
+
+/* Transition for each step of the animation */
+:root {
+	--ease-in: ease-in 0.3s;
+}
+
+.square {
+	height: 20rem;
+	width: 20rem;
+	background: slateblue;
+}
+
+.square.green-background {
+	transition: var(--ease-in);
+	background: mediumseagreen;
+}
+
+.square.turn-into-circle {
+	transition: var(--ease-in);
+	border-radius: 50%;
+}
+
+.square.add-border {
+	transition: var(--ease-in);
+	border: 4px solid dodgerblue;
+}
+
+.square.hide {
+	transition: var(--ease-in);
+	opacity: 0;
+}
