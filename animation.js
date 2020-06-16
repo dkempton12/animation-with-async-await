@@ -19,10 +19,6 @@ async function handleClick() {
 
 	await timer(1000);
 	el.classList.add('hide');
-
-	await timer(1000);
-	el.classList.remove('turn-into-circle');
-	el.classList.remove('hide');
 }
 
 square.addEventListener('click', handleClick);
