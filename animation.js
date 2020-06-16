@@ -19,6 +19,9 @@ async function handleClick() {
 
 	await timer(1000);
 	el.classList.add('hide');
+
+	// reload animation
+	location.reload();
 }
 
 square.addEventListener('click', handleClick);
